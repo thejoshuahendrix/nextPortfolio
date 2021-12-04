@@ -1,0 +1,48 @@
+{
+  "headTitle": "Home | Hendrix Software",
+  "hero": {
+    "title": "Hey, Its Josh!",
+    "p0": "Full-stack Typescript Developer",
+    "p1": "Currently looking for work",
+    "p2": "",
+    "des0": "I have my Associate's of Applied Science from MTC.",
+    "des1": "I enjoy creating high-quality software products with a complex logic behind it.",
+    "des2": "My technology stack includes React, TypeScript and Node.",
+    "des3": "I am also currently learning more about Ethereum blockchain, cybersecurity and DevOps."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of my most favourite projects that I enjoyed coding and designing from scratch.",
+    "fullstack": {
+      "subtitle": "User Authentication",
+      "description": "A fullstack application with user roles and admin roles."
+    },
+    "horoscope": {
+      "subtitle": "API Consumption",
+      "description": "A React app utilizing a 3rd party API for showing horoscope info."
+    },
+    "binary": {
+      "subtitle": "Search Visualization",
+      "description": "A binary versus linear search visualizer that displays the benefits and shortcomings of a binary and linear searches."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "I am passionate about using cutting-edge technologies. These are the tools I am most familiar with and build things every day."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Here are some great companies I had the honour to join for working on various interesting projects."
+  },
+  "contact": {
+    "title": "Wanna reach out?",
+    "description": "Feel free to drop me a message if you have some interesting offer or you want to hang out."
+  },
+  "currently": "Currently",
+  "citation": {
+    "content": "Men are not creatures of circumstance, circumstances are the creatures of men.",
+    "author": "-Benjamin Desrali"
+  },
+  "covid19": "Postponed due to Covid-19",
+  "and": "and"
+}
