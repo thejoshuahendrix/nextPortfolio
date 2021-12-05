@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import { FC } from "react";
 
 import { Container } from "../Container";
-import { NinjaIcon } from "./libs/NinjaIcon";
 import { Props } from "./props";
 
 const textVariants = {
@@ -46,9 +45,7 @@ export const CitationOverlay: FC<Props> = ({ citation }: Props) => {
             delay: 3.0,
             duration: 1.2,
           }}
-        >
-          <NinjaIcon className="w-10 mb-2 fill-current md:ml-auto dark:text-white-900 text-black-900" />
-        </motion.div>
+        ></motion.div>
         <motion.p
           className="mt-4 mb-2 text-xl font-medium leading-none md:text-2xl dark:text-white-900 text-black-900 md:my-0"
           variants={textVariants}
