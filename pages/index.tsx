@@ -1,7 +1,6 @@
 import {
   CitationOverlay,
   Contact,
-  Experience,
   Footer,
   Header,
   Hero,
@@ -13,7 +12,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const IndexPage = () => {
   const [citation, setCitation] = useState(true);

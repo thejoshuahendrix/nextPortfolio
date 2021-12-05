@@ -1,9 +1,9 @@
 import { Container, Section } from "components";
 import { useAnimation } from "framer-motion";
 import { useTranslation } from "next-i18next";
-import React, { FC, useEffect } from "react";
+import { FC, useEffect } from "react";
 import { FaReact } from "react-icons/fa";
-import { SiGraphql, SiNodeDotJs } from "react-icons/si";
+import { SiNodeDotJs } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 
 import { EthereumIcon, NextIcon, TsIcon } from "./libs/Icons";

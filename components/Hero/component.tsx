@@ -1,7 +1,7 @@
 import { Container, MediaIcon } from "components";
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
-import React, { FC } from "react";
+import { FC } from "react";
 import { FaGithub, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 
 import { HandWave } from "./libs/HandWave";
@@ -48,11 +48,6 @@ export const Hero: FC = () => {
         <MediaIcon
           icon={<FaGithub className="w-6 h-6 md:w-7 md:h-7" />}
           href="https://github.com/thejoshuahendrix"
-          className="mr-4"
-        />
-        <MediaIcon
-          icon={<FaTelegram className="w-6 h-6 md:w-7 md:h-7" />}
-          href="https://t.me/iamironsoul"
           className="mr-4"
         />
         <MediaIcon

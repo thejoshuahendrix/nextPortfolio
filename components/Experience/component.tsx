@@ -2,7 +2,7 @@ import { Container, Section } from "components";
 import { useAnimation } from "framer-motion";
 import { useMdScreen } from "lib";
 import { useTranslation } from "next-i18next";
-import React, { FC, useEffect, useMemo } from "react";
+import { FC, useEffect, useMemo } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { Item } from "./libs/Item";

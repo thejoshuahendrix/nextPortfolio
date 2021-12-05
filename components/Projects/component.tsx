@@ -1,6 +1,6 @@
 import { Section } from "components";
 import { useTranslation } from "next-i18next";
-import React, { FC, useMemo } from "react";
+import { FC, useMemo } from "react";
 
 import { ProjectCard } from "./libs/ProjectCard";
 

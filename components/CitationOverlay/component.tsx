@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
-import React, { FC } from "react";
+import { FC } from "react";
 
 import { Container } from "../Container";
 import { NinjaIcon } from "./libs/NinjaIcon";

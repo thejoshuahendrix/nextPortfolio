@@ -4,7 +4,7 @@ import { useOnClickOutside } from "lib";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
-import React, { FC, useCallback, useEffect, useRef, useState } from "react";
+import { FC, useCallback, useEffect, useRef, useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
 import useSound from "use-sound";
 
