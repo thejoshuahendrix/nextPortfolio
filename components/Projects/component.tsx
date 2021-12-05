@@ -34,7 +34,7 @@ export const Projects: FC = () => {
         technologies: ["Javascript", "Express", "CSS"],
         externalLink: "https://binarysearch.herokuapp.com",
         githubLink: "https://github.com/thejoshuahendrix/binaryvslinear",
-        imageLink: `/images/binary.png`,
+        imageLink: `/images/binarys.png`,
       },
     ],
     [t]
