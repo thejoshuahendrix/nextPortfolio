@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNodeDotJs } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 
-import { EthereumIcon, GoogleIcon, TsIcon } from "./libs/Icons";
+import { DockerIcon, EthereumIcon, GoogleIcon, TsIcon } from "./libs/Icons";
 import { Skill } from "./libs/Skill";
 
 const skills = [
@@ -34,6 +34,11 @@ const skills = [
     name: "Google",
     href: "https://google.com",
     icon: <GoogleIcon />,
+  },
+  {
+    name: "Docker",
+    href: "https://docker.com",
+    icon: <DockerIcon />,
   },
 ];
 
