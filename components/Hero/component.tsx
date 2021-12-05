@@ -56,7 +56,7 @@ export const Hero: FC = () => {
         />
         <MediaIcon
           icon={<FaTwitter className="w-6 h-6 md:w-7 md:h-7" />}
-          href="https://twitter.com/ironsoul0"
+          href="https://twitter.com/hendrixjoshua"
         />
       </div>
       <div className="mt-10">
