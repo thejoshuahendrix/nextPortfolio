@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNodeDotJs } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 
-import { EthereumIcon, NextIcon, TsIcon } from "./libs/Icons";
+import { EthereumIcon, GoogleIcon, TsIcon } from "./libs/Icons";
 import { Skill } from "./libs/Skill";
 
 const skills = [
@@ -33,7 +33,7 @@ const skills = [
   {
     name: "Google",
     href: "https://google.com",
-    icon: <NextIcon />,
+    icon: <GoogleIcon />,
   },
 ];
 

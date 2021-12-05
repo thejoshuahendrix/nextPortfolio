@@ -58,7 +58,7 @@ export const EthereumIcon: FC<Props> = ({ className }: Props) => {
   );
 };
 
-export const NextIcon: FC<Props> = ({ className }: Props) => {
+export const GoogleIcon: FC<Props> = ({ className }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
