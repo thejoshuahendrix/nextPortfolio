@@ -1,10 +1,8 @@
 import clsx from "clsx";
 import { Container, Logo } from "components";
-import { useOnClickOutside } from "lib";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
-import { FC, useCallback, useEffect, useRef, useState } from "react";
+import { FC, useCallback, useEffect, useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
 import useSound from "use-sound";
 
@@ -15,32 +13,14 @@ enum Themes {
   dark = "dark",
 }
 
-enum Languages {
-  en = "en",
-}
-
-const languages = [
-  {
-    id: Languages.en,
-    name: "EN",
-    flag: "🇺🇸",
-  },
-];
-
 export const Header: FC = () => {
   const [playOnDark] = useSound("/sounds/dark-on.mp3");
   const [playOnLight] = useSound("/sounds/light-on.mp3");
   const visible = useHeaderVisible();
-  const ref = useRef<HTMLDivElement>(null);
 
   const [mounted, setMounted] = useState(false);
-  const [langPicker, setLangPicker] = useState(false);
 
   const { theme, setTheme } = useTheme();
-  const router = useRouter();
-  const [language, setLanguage] = useState<string>(
-    router.locale || Languages.en
-  );
 
   const toggleTheme = useCallback(() => {
     if (theme === Themes.light) {
@@ -51,28 +31,6 @@ export const Header: FC = () => {
 
     setTheme(theme === Themes.light ? Themes.dark : Themes.light);
   }, [setTheme, theme, playOnDark, playOnLight]);
-
-  const toggleLangPicker = useCallback(() => {
-    setLangPicker((prev) => !prev);
-  }, []);
-
-  const turnOffLangPicker = useCallback(() => {
-    setLangPicker(false);
-  }, []);
-
-  useOnClickOutside(ref, turnOffLangPicker);
-
-  const toggleLanguage = useCallback(
-    (newLanguage: Languages) => {
-      return () => {
-        turnOffLangPicker();
-        setLanguage(newLanguage);
-        if (newLanguage !== language)
-          router.push("/", "/", { locale: newLanguage });
-      };
-    },
-    [router, turnOffLangPicker, language]
-  );
 
   useEffect(() => setMounted(true), []);
 
