@@ -14,7 +14,7 @@ enum Themes {
 }
 
 export const Header: FC = () => {
-  
+
   const visible = useHeaderVisible();
 
   const [mounted, setMounted] = useState(false);
@@ -22,10 +22,10 @@ export const Header: FC = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = useCallback(() => {
-    
+
 
     setTheme(theme === Themes.light ? Themes.dark : Themes.light);
-  }, [setTheme, theme, playOnDark, playOnLight]);
+  }, [setTheme, theme]);
 
   useEffect(() => setMounted(true), []);
 
