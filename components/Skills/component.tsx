@@ -26,7 +26,7 @@ const skills = [
     icon: <SiNodeDotJs color="#539E43" />,
   },
   {
-    name: "Ethereum",
+    name: "Solidity",
     href: "https://ethereum.org",
     icon: <EthereumIcon />,
   },
