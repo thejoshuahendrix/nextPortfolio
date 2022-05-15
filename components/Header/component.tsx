@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { FC, useCallback, useEffect, useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
-import useSound from "use-sound";
+
 
 import { useHeaderVisible } from "./libs/useHeaderVisible";
 
@@ -14,8 +14,7 @@ enum Themes {
 }
 
 export const Header: FC = () => {
-  const [playOnDark] = useSound("/sounds/dark-on.mp3");
-  const [playOnLight] = useSound("/sounds/light-on.mp3");
+  
   const visible = useHeaderVisible();
 
   const [mounted, setMounted] = useState(false);
@@ -23,11 +22,7 @@ export const Header: FC = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = useCallback(() => {
-    if (theme === Themes.light) {
-      playOnLight();
-    } else {
-      playOnDark();
-    }
+    
 
     setTheme(theme === Themes.light ? Themes.dark : Themes.light);
   }, [setTheme, theme, playOnDark, playOnLight]);
